@@ -1,0 +1,36 @@
+.notification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__headline {
+    margin-bottom: 24px;
+    font-family: $fontFamilySyncopate;
+    font-style: normal;
+    font-weight: $fontWeight700;
+    @include fontSizeLineHeight(24px, 25px);
+    text-align: center;
+    text-transform: uppercase;
+    color: $colorOnyx;
+
+    @include onTablet {
+      padding: 0 45px;
+      margin-top: 40px;
+    }
+
+    @include onLaptop {
+      padding: 0;
+      @include fontSizeLineHeight(32px, 33px);
+    }
+
+    @include onLaptopL {
+      @include fontSizeLineHeight(36px, 37px);
+      padding: 0 45px;
+    }
+
+    @include onDesktop {
+      @include fontSizeLineHeight(36px, 37px);
+      padding: 0 255px;
+    }
+  }
+}

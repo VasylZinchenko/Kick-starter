@@ -1,0 +1,96 @@
+.latest-news {
+  &__swiper {
+    margin-bottom: 56px;
+
+    @include onLaptop {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__headline {
+    font-family: $fontFamilySyncopate;
+    font-weight: $fontWeight700;
+    @include fontSizeLineHeight(24px, 25px);
+    text-transform: uppercase;
+    color: $colorOnyx;
+    margin-bottom: 24px;
+
+    @include onTablet {
+      font-size: 32px;
+    }
+  }
+
+  &__swiper {
+    position: relative;
+  }
+
+  &__card {
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: -6px 6px $ButterflyBlue, -6px 6px 0px 1px $colorOnyx;
+    }
+
+    &--night:hover {
+      box-shadow: -6px 6px $ButterflyBlue, -6px 6px 0px 1px $mainWhite;
+    }
+
+    &_content-wrapper {
+      text-align: initial;
+      height: 164px;
+      margin: 11px 25px 25px 25px;
+
+      @include onTablet {
+        height: 205px;
+        margin: 10px 16px 25px 16px;
+      }
+
+      @include onLaptop {
+        margin: 10px 13px 25px 13px;
+      }
+
+      @include onLaptopL {
+        height: 170px;
+      }
+
+      @include onDesktop {
+        margin: 16px 24px 25px 24px;
+      }
+    }
+
+    &_headline {
+      margin-bottom: 4px;
+      font-family: $fontFamilySyncopate;
+      font-weight: $fontWeight700;
+      @include fontSizeLineHeight(16px, 20px);
+      text-transform: uppercase;
+      color: $colorOnyx;
+
+      @include onTablet {
+        font-size: 14px;
+      }
+
+      @include onLaptopL {
+        font-size: 16px;
+        @include fontSizeLineHeight(16px, 20px);
+      }
+    }
+
+    &_paragraph {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      font-family: $fontFamilyKyivType;
+      @include fontSizeLineHeight(16px, 24px);
+      color: $colorOnyx;
+      overflow: hidden;
+
+      @include onLaptop {
+        font-size: 14px;
+      }
+
+      @include onLaptopL {
+        @include fontSizeLineHeight(16px, 24px);
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.latest-news__swiper-slide {
+  text-align: center;
+  background: #fff;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  border: 1px solid $colorOnyx;
+  margin-bottom: 50px;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 0.3s;
+
+  @include onTablet {
+    margin-bottom: 35px;
+  }
+}
+
+.swiper-slide__picture {
+  display: block;
+  @include square(100%);
+  object-fit: cover;
+}
+
+.swiper-scrollbar {
+  margin-top: 50px;
+}
+
+.awiper-slide {
+  transition-property: none;
+}
+
+.swiper-scrollbar-drag {
+  background: $colorOnyx;
+  border: 1px solid $mainWhite;
+  box-sizing: border-box;
+}
